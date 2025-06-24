@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETis 30</title>
+    <link rel="stylesheet" href="bor.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/logo cetis.png" alt="Logo CETis 30">
+                <div>
+                    <h1>CETis 30</h1>
+                    <p>Centro de Estudios Tecnológicos industrial y de servicios No. 30</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Menú desplegable MODIFICADO según lo solicitado -->
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    Servicios Escolares
+                    <ul class="submenu">
+                        <li class="submenu-item" onclick="showSection('becas')">Becas</li>
+                        <li class="submenu-item" onclick="showSection('servicio-social')">Servicio social</li>
+                    </ul>
+                </li>
+                
+                <li class="menu-item">
+                    Vinculación
+                    <ul class="submenu">
+                        <li class="submenu-item" onclick="showSection('practicas')">Prácticas profesionales</li>
+                        <li class="submenu-item">
+                            Programas
+                            <ul class="submenu" style="left: 100%; top: 0;">
+                                <li class="submenu-item" onclick="showSection('mecanica')">Mecánica Industrial</li>
+                                <li class="submenu-item" onclick="showSection('electricidad')">Electricidad</li>
+                                <li class="submenu-item" onclick="showSection('contabilidad')">Contabilidad</li>
+                                <li class="submenu-item" onclick="showSection('administracion')">Administración de RH</li>
+                                <li class="submenu-item" onclick="showSection('programacion')">Programación</li>
+                                <li class="submenu-item" onclick="showSection('ofimatica')">Ofimática</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="menu-item">
+                    Servicios docentes
+                    <ul class="submenu">
+                        <li class="submenu-item" onclick="showSection('tutorias')">Tutorías</li>
+                    </ul>
+                </li>
+                
+                <li class="menu-item" onclick="showSection('ubicacion')">
+                    Ubicación
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Secciones de contenido (se mantienen igual que antes) -->
+        <section id="becas" class="content-section">
+            <h2>Becas</h2>
+            <p>El CETis 30 cuenta con diferentes programas de becas para apoyar a los estudiantes:</p>
+            <ul>
+                <li>Beca Bienestar para las Familias de Educación Media Superior</li>
+                <li>Becas de Excelencia Académica</li>
+                <li>Becas de Apoyo Económico</li>
+                <li>Becas para Prácticas Profesionales</li>
+            </ul>
+            <p>Informes en el Departamento de Servicios Escolares.</p>
+        </section>
+        
+        <section id="servicio-social" class="content-section">
+            <h2>Servicio Social</h2>
+            <p>Programa obligatorio para todos los estudiantes que hayan cubierto al menos el 70% de los créditos de su carrera.</p>
+            <p><strong>Requisitos:</strong></p>
+            <ul>
+                <li>Carta de presentación de la institución</li>
+                <li>Plan de trabajo</li>
+                <li>Registro en el Departamento de Servicio Social</li>
+            </ul>
+            <p>Duración mínima: 480 horas.</p>
+        </section>
+        
+        <section id="practicas" class="content-section">
+            <h2>Prácticas Profesionales</h2>
+            <p>Programa que permite a los estudiantes aplicar sus conocimientos en empresas e instituciones reales.</p>
+            <p><strong>Requisitos:</strong></p>
+            <ul>
+                <li>Haber cubierto el 70% de los créditos</li>
+                <li>Contar con seguro médico vigente</li>
+                <li>Presentar carta de aceptación de la empresa</li>
+            </ul>
+            <p>Duración mínima: 240 horas.</p>
+        </section>
+        
+        <!-- Secciones de Programas Académicos -->
+        <section id="mecanica" class="content-section">
+            <h2>Técnico en Mecánica Industrial</h2>
+            <p>Forma profesionales capaces de operar, mantener y reparar maquinaria industrial.</p>
+            <div class="programas-grid">
+                <div class="programa-card">
+                    <h3 class="programa-title">Perfil de Egreso</h3>
+                    <p>El egresado podrá instalar, operar y mantener sistemas mecánicos industriales aplicando normas de seguridad e higiene.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Campo Laboral</h3>
+                    <p>Industria manufacturera, maquiladoras, talleres de mantenimiento, empresas de producción.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Duración</h3>
+                    <p>3 años (6 semestres)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="electricidad" class="content-section">
+            <h2>Técnico en Electricidad</h2>
+            <p>Forma especialistas en instalaciones, mantenimiento y reparación de sistemas eléctricos.</p>
+            <div class="programas-grid">
+                <div class="programa-card">
+                    <h3 class="programa-title">Perfil de Egreso</h3>
+                    <p>Capacidad para instalar y mantener sistemas eléctricos residenciales e industriales cumpliendo con normas oficiales.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Campo Laboral</h3>
+                    <p>Empresas de construcción, mantenimiento industrial, compañías eléctricas, contratistas independientes.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Duración</h3>
+                    <p>3 años (6 semestres)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contabilidad" class="content-section">
+            <h2>Técnico en Contabilidad</h2>
+            <p>Forma profesionales capaces de registrar operaciones contables y fiscales de las organizaciones.</p>
+            <div class="programas-grid">
+                <div class="programa-card">
+                    <h3 class="programa-title">Perfil de Egreso</h3>
+                    <p>Manejo de sistemas contables, elaboración de estados financieros, cálculo de impuestos y nóminas.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Campo Laboral</h3>
+                    <p>Departamentos contables, despachos fiscales, áreas financieras, empresas de todos los sectores.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Duración</h3>
+                    <p>3 años (6 semestres)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="administracion" class="content-section">
+            <h2>Técnico en Administración de Recursos Humanos</h2>
+            <p>Forma profesionales para gestionar el capital humano en las organizaciones.</p>
+            <div class="programas-grid">
+                <div class="programa-card">
+                    <h3 class="programa-title">Perfil de Egreso</h3>
+                    <p>Capacidad para realizar procesos de reclutamiento, selección, capacitación y desarrollo de personal.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Campo Laboral</h3>
+                    <p>Departamentos de RH, empresas de outsourcing, consultorías en capital humano.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Duración</h3>
+                    <p>3 años (6 semestres)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="programacion" class="content-section">
+            <h2>Técnico en Programación</h2>
+            <p>Forma desarrolladores de software con habilidades para crear aplicaciones y sistemas informáticos.</p>
+            <div class="programas-grid">
+                <div class="programa-card">
+                    <h3 class="programa-title">Perfil de Egreso</h3>
+                    <p>Desarrollo de aplicaciones web y móviles, manejo de bases de datos, creación de sistemas informáticos.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Campo Laboral</h3>
+                    <p>Empresas de desarrollo de software, departamentos de TI, emprendimiento tecnológico.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Duración</h3>
+                    <p>3 años (6 semestres)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ofimatica" class="content-section">
+            <h2>Técnico en Ofimática</h2>
+            <p>Forma especialistas en herramientas informáticas para la gestión documental y administrativa.</p>
+            <div class="programas-grid">
+                <div class="programa-card">
+                    <h3 class="programa-title">Perfil de Egreso</h3>
+                    <p>Manejo avanzado de suites ofimáticas, gestión documental, automatización de procesos administrativos.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Campo Laboral</h3>
+                    <p>Departamentos administrativos, áreas de soporte técnico, empresas de todos los sectores.</p>
+                </div>
+                <div class="programa-card">
+                    <h3 class="programa-title">Duración</h3>
+                    <p>3 años (6 semestres)</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Tutorías -->
+        <section id="tutorias" class="content-section">
+            <h2>Tutorías Académicas</h2>
+            <p>Sistema de acompañamiento personalizado para los estudiantes del CETis 30.</p>
+            <p><strong>Objetivos:</strong></p>
+            <ul>
+                <li>Mejorar el rendimiento académico</li>
+                <li>Prevenir la deserción escolar</li>
+                <li>Orientar en la solución de problemas escolares</li>
+                <li>Fomentar hábitos de estudio</li>
+            </ul>
+            <p>Cada grupo cuenta con un tutor asignado.</p>
+        </section>
+        
+        <!-- Sección de Ubicación -->
+        <section id="ubicacion" class="content-section active">
+            <h2>Ubicación del CETis 30</h2>
+            <p>Dirección: Cienfuegos 1017, Residencial Zacatenco, Gustavo A. Madero, 07360 Ciudad de México, CDMX</p>
+            <p>Teléfono: 5555865529</p>
+            <p>Correo electrónico: contacto@cetis30.edu.mx</p>
+            
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17289.000318813596!2d-99.14041864747688!3d19.486341844478304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9950eefa253%3A0x2319cda3e23bc4b5!2sCETIS%2030!5e0!3m2!1ses!2smx!4v1746871586057!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 CETis 30 - Todos los derechos reservados</p>
+            <p>Sistema Nacional de Educación Tecnológica</p>
+        </div>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Muestra la sección seleccionada
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
